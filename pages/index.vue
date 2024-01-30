@@ -78,7 +78,6 @@
 <style scoped>
 .main {
     background-color: #f3f4f6;
-    height: 100vh;
 }
 
 </style>
