@@ -1,7 +1,7 @@
 <template>
     <div class="main flex flex-col gap-10 px-5 py-10 lg:p-10 lg:flex-row">
         <div class="flex gap-5 lg:flex-col lg:mr-20">
-            <img class="w-32 h-32 rounded-full" src="assets/public/img/profile-pic.png" alt="">
+            <img class="w-32 h-32 rounded-full" src="/img/profile-pic.png" alt="">
             <div class="flex flex-col space-y-2">
                 <h1 class="text-2xl font-bold">Martín Muñoz</h1>
                 <h2 class="text-xl font-bold">@munoncode</h2>
@@ -16,7 +16,7 @@
         </div>
         <div class="w-full space-y-5">
             
-                <ItemCard v-for="item in items" :title="item.title" :description="item.description" :image="item.image" :url="item.url" />
+                <ItemCard v-for="item in items" :title="item.title" :description="item.description" :image="item.image" :url="item.url" :sourceImage="true" />
             
         </div>
 
@@ -30,6 +30,18 @@
          description: 'Crea Tutores Personalizados de Inteligencia Artificial',
          image: 'https://play-lh.googleusercontent.com/jGccq1xrZ7XxhCIA3UOfO4mWhcKjRQAHpMoxEeZLZ0lE8RDgmmFVM4Cgo-29wXn4Gm4=w240-h480-rw',
          url: 'https://play.google.com/store/apps/details?id=com.munoncode.ai_tutor_app'
+        },
+        {   
+         title: 'InstaCover: Portadas de IA',
+         description: 'Crea Portadas Realistas Para Videos de Intagram y TikTok Usando Inteligencia Artificial',
+         image: '/img/instacover_logo.png',
+         url: 'https://play.google.com/store/apps/details?id=com.munoncode.instacover',
+        },
+        {   
+         title: 'Youtube Thumbnail Preview',
+         description: 'Previsualiza Como Se Verá Tu Miniatura de Youtube en la Página de Inicio',
+         image: '/img/yt_thumbnail_preview_logo.png',
+         url: 'https://youtubethumbnailpreview.vercel.app/',
         },
      {
          title: 'AImage',
@@ -48,7 +60,8 @@
          description: 'Juego Meme Estilo Flappy Bird',
          image: 'https://play-lh.googleusercontent.com/aMo_WkfjZEH_euPR443t7w3EZ19rfDQcjUnTvZp5IbnSij5WC4DjPxghZ9wu1K8AZA=w240-h480-rw',
          url: 'https://play.google.com/store/apps/details?id=com.munoncode.gigachadapp'
-        }
+        },
+        
  ])
 
  useHead({
